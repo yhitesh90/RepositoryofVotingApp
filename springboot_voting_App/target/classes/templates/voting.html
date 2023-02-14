@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Voting Page</title>
+</head>
+<body bgcolor="Yellow">
+      <form action="#" th:action="@{/letsvote}" th:object="${voting}" method="post">
+<fieldset>
+<h1>Voting Page</h1>
+<h2><p>Username: <span th:utext="${usrername}"></span></p></h2>
+  <label for="option1">Candidate 1</label>
+    <input type="radio" id="option1" name="candidate" value="candidate1"> <br>
+
+    <label for="option2">Candidate 2</label>
+    <input type="radio" id="option2" name="candidate" value="candidate2"> <br>
+    
+      <label for="option3">Candidate 3</label>
+    <input type="radio" id="option3" name="candidate" value="candidate3"><br>
+    
+      <label for="option4">Candidate 4</label>
+    <input type="radio" id="option4" name="candidate" value="candidate4"><br>
+
+    <input type="submit" value="Submit Vote">
+    <a href="http://localhost:8080/login"><input type="Button" value="Logout"></a>
+    <!-- <input type="hidden" name="userId" value ="${userId}"> -->
+</fieldset>
+</form>
+
+
+
+</body>
+</html>

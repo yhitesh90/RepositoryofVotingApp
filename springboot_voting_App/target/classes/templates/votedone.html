@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor="aqua">
+<fieldset>
+      <form action="#" th:action="@{/votedone}" th:object="${voting}" method="post">
+
+	<h1>Thanks for Voting Please Logout</h1>
+	
+	    <a href="http://localhost:8080/login"><input type="Button" value="Logout"></a>
+	
+	</form>
+	</fieldset>
+</body>
+</html>

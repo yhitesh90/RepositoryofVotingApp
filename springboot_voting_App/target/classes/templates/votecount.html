@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="aqua">
+     <form action="#" th:action="@{/voteCount}" th:object="${voteCounts}" method="post">
+<fieldset>
+<table>
+    <tr>
+        <th>Candidate</th>
+        <th>Count</th>
+    </tr>
+    <tr th:each="voteCount : ${voteCounts}">
+        <td th:text="${voteCount.candidate}"></td>
+        <td th:text="${voteCount.count}"></td>
+    </tr>
+</table>	
+
+</fieldset>
+</form>
+</body>
+</html>

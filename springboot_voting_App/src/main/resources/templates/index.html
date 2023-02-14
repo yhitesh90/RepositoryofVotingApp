@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body bgcolor="Yellow">
+         <h1>LOGIN PAGE</h1>
+    <fieldset>
+        <form action="#" th:action="@{/login}" th:object="${voting}" method="post">
+            <table>
+                <tr>
+                    <td>Usrername:</td>
+                    <td><input type="text" th:field="*{usrername}" /></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" th:field="*{password}" /></td>
+                </tr>
+                <tr>
+                
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+            <h3>If you have not signed up please signup</h2>
+         <a href="http://localhost:8080/signup"><input type="Button" value="Signup"></a>
+            
+        </form>
+        </fieldset>
+    </body>
+</html>
